@@ -1,19 +1,27 @@
-import Title from "../atoms/Title";
-import TextInput from "../atoms/TextInput";
 import React, {useState} from "react";
 import RegistrationField from "../molecules/RegistrationField";
 
 
 const Registration = () => {
-    const [password, setPassword] = useState("huy");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const handlePasswordChange = (value: string) => {
         setPassword(value);
     };
 
+    const handleEmailChange = (value: string) => {
+        setEmail(value);
+    };
+
     return (
         <div>
-            <RegistrationField password={password} handlePasswordChange={handlePasswordChange}/>
+            <RegistrationField
+                email={email}
+                handleEmailChange={handleEmailChange}
+                password={password}
+                handlePasswordChange={handlePasswordChange}
+            />
         </div>
     )
 }

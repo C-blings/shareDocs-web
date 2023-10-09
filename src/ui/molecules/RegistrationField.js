@@ -4,24 +4,25 @@ import React, {useState} from "react";
 
 
 const RegistrationField = ({
-        password,
-        handlePasswordChange
+    email,
+    handleEmailChange,
+    password,
+    handlePasswordChange
 }) => {
 
     return (
         <div>
             <Title text={"Registration"}/>
             <TextInput
-                value={password}
-                onChange={handlePasswordChange}
+                value={email}
+                onChange={handleEmailChange}
+                placeholder={"Введите свою почту"}
             />
             <TextInput
                 value={password}
                 onChange={handlePasswordChange}
-            />
-            <TextInput
-                value={password}
-                onChange={handlePasswordChange}
+                type={"password"}
+                placeholder={"Введите пароль"}
             />
         </div>
     )

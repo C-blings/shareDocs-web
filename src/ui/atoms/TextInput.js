@@ -1,8 +1,10 @@
-import React, {ChangeEvent, Dispatch, SetStateAction} from 'react';
+import React from 'react';
 
 const TextInput = ({
     value,
-    onChange
+    onChange,
+    placeholder,
+    type = "text"
 }) => {
 
     const handleChange = (e) => {
@@ -12,9 +14,10 @@ const TextInput = ({
     return(
         <div>
             <input
-                type="text"
+                type={type}
                 value={value}
                 onChange={handleChange}
+                placeholder={placeholder}
             />
         </div>
     )
