@@ -10,7 +10,7 @@ function App() {
     };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:80")
+    fetch("ssh paul@51.250.31.241")
         .then((res) => res.json())
         .then((data) => setMessage(data.message));
   }, []);

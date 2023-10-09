@@ -1,6 +1,7 @@
 import Title from "../atoms/Title";
 import TextInput from "../atoms/TextInput";
 import React, {useState} from "react";
+import RegistrationField from "../molecules/RegistrationField";
 
 
 const Registration = () => {
@@ -12,19 +13,7 @@ const Registration = () => {
 
     return (
         <div>
-            <Title text={"Registration"}/>
-            <TextInput
-                value={password}
-                onChange={handlePasswordChange}
-            />
-            <TextInput
-                value={password}
-                onChange={handlePasswordChange}
-            />
-            <TextInput
-                value={password}
-                onChange={handlePasswordChange}
-            />
+            <RegistrationField password={password} handlePasswordChange={handlePasswordChange}/>
         </div>
     )
 }
