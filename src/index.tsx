@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Profile from "./Profile";
+import Registration from "./ui/components/Registration";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     {
         path: "profile/:id",
         element: <Profile/>
+    },
+    {
+        path: "registration",
+        element: <Registration/>
     }
 ])
 
