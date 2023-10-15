@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,6 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Profile from "./Profile";
 import Registration from "./ui/components/Registration";
+import {container} from "tsyringe";
+import {configure} from "@yoskutik/react-vvm";
+import {makeObservable} from "mobx";
+
+configure({
+    vmFactory: VM => container.resolve(VM),
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -29,7 +37,7 @@ const router = createBrowserRouter([
 
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}/>
     </React.StrictMode>
 );
 
