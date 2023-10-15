@@ -16,7 +16,7 @@ class AppViewModel extends ViewModel {
   }
 
   onChangeGreeting = () => {
-    this.app.changeText("Привет, дорогой пользователь 2")
+    this.app.changeText()
   }
 }
 

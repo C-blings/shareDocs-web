@@ -1,17 +1,26 @@
 import {singleton} from "tsyringe";
-import {action, makeObservable, observable} from "mobx";
-
+import {action, makeObservable, observable, runInAction} from "mobx";
+import axios from "axios";
+import {AppAPI} from "../remote/AppAPI";
 
 @singleton()
 export class AppStore {
     @observable greetingText = 'Привет, дорогой пользователь'
 
-    constructor() {
+    constructor(private api: AppAPI) {
         makeObservable(this);
     }
 
-    @action changeText = (newText: string) => {
-        // обращаемся к серваку по axios
-        this.greetingText = newText
+    changeText = async () => {
+        try {
+            const data = await this.api.getApp()
+            runInAction(() => {
+                this.greetingText = data.message
+            })
+        } catch (error) {
+            runInAction(() => {
+                this.greetingText = "Мддддааааа, неудобно  получилось"
+            })
+        }
     }
 }
