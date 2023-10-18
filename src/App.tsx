@@ -3,22 +3,7 @@ import {computed, makeObservable} from "mobx";
 import {view, ViewModel} from "@yoskutik/react-vvm";
 import {AppStore} from "./data/repository/AppStore";
 import {injectable} from "tsyringe";
-
-@injectable()
-class AppViewModel extends ViewModel {
-  @computed get text(): string {
-    return this.app.greetingText;
-  }
-
-  constructor(private app: AppStore) {
-    super();
-    makeObservable(this);
-  }
-
-  onChangeGreeting = () => {
-    this.app.changeText()
-  }
-}
+import AppViewModel from "./ui/viewmodels/AppViewModel";
 
 const App = view(AppViewModel)(({viewModel}) => (
     <div className="App">

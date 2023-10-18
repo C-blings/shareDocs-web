@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/remote/APIConstants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/remote/AppAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/remote/BasicAPI.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repository/AppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/AppStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/shared-docs/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/src/data/remote&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data/remote" />
       <recent name="$PROJECT_DIR$/shared-docs/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -124,7 +120,10 @@
       <workItem from="1697333267491" duration="131000" />
       <workItem from="1697333456548" duration="3095000" />
       <workItem from="1697336881631" duration="2845000" />
-      <workItem from="1697360078037" duration="2686000" />
+      <workItem from="1697360078037" duration="3147000" />
+      <workItem from="1697389922336" duration="105000" />
+      <workItem from="1697399999876" duration="3719000" />
+      <workItem from="1697643662155" duration="649000" />
     </task>
     <servers />
   </component>

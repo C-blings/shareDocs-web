@@ -1,10 +1,7 @@
 import {BasicAPI} from "./BasicAPI";
 import app from "../../App";
 import {injectable} from "tsyringe";
-
-type AppDTO = {
-    message: string
-}
+import AppDTO from "../dto/AppDTO";
 @injectable()
 export class AppAPI extends BasicAPI {
 

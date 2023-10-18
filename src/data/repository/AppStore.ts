@@ -1,4 +1,4 @@
-import {singleton} from "tsyringe";
+import {injectable, singleton} from "tsyringe";
 import {action, makeObservable, observable, runInAction} from "mobx";
 import axios from "axios";
 import {AppAPI} from "../remote/AppAPI";
@@ -21,6 +21,7 @@ export class AppStore {
             runInAction(() => {
                 this.greetingText = "Мддддааааа, неудобно  получилось"
             })
+
         }
     }
 }
