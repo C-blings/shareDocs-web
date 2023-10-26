@@ -8,7 +8,7 @@ const RegistrationField = ({
     handleEmailChange,
     password,
     handlePasswordChange
-}) => {
+} : {email: string; handleEmailChange: Function; password: string; handlePasswordChange: Function }) => {
 
     return (
         <div>
