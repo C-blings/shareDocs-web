@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ui/atoms/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/TextInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1697389922336" duration="105000" />
       <workItem from="1697399999876" duration="3719000" />
       <workItem from="1697643662155" duration="649000" />
-      <workItem from="1698358837564" duration="2306000" />
+      <workItem from="1698358837564" duration="4115000" />
     </task>
     <servers />
   </component>
