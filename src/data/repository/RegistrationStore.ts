@@ -3,27 +3,31 @@ import {action, makeObservable, observable, runInAction} from "mobx";
 import axios from "axios";
 import {RegistrationAPI} from "../remote/RegistrationAPI";
 import type RegistrationDTO from "../dto/RegistrationDTO";
+import {useState} from "react";
 
 
 @singleton()
 export class RegistrationStore {
-    @observable userData: RegistrationDTO = {
-        nickname: "NULL",
-        email: "NULL",
-        password: "NULL"
-    }
+    result = "";
+    @observable nickname: string = "";
+    @observable email: string = "";
+    @observable password: string = "";
 
     constructor(private api: RegistrationAPI) {
         makeObservable(this);
     }
 
-    sendUserInfo = async ({userData} : {userData: RegistrationDTO}) => {
+    sendUserInfo = async (userData: RegistrationDTO) => {
         try {
-            const response = await this.api.sendUserInfo(userData);
+            await this.api.sendUserInfo(userData);
+            runInAction(()  => {
+                this.result = "Добро пожаловать!";
+            })
+            // redirect somewhere
         } catch (error) {
-            // runInAction(() => {
-            //     this.data. = "Не удалось отправить данные"
-            // })
+            runInAction(()  => {
+                this.result = "Не удалось отправить данные";
+            })
         }
     }
 }

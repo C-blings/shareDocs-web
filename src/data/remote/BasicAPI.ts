@@ -1,6 +1,6 @@
 import {singleton} from "tsyringe";
 import axios from "axios";
-import app from "../../App";
+import app from "../../ui/views/App";
 import {APIConstants} from "./APIConstants";
 
 @singleton()

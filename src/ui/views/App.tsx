@@ -1,9 +1,9 @@
 import React from 'react';
 import {computed, makeObservable} from "mobx";
 import {view, ViewModel} from "@yoskutik/react-vvm";
-import {AppStore} from "./data/repository/AppStore";
+import {AppStore} from "../../data/repository/AppStore";
 import {injectable} from "tsyringe";
-import AppViewModel from "./ui/viewmodels/AppViewModel";
+import AppViewModel from "../viewmodels/AppViewModel";
 
 const App = view(AppViewModel)(({viewModel}) => (
     <div className="App">

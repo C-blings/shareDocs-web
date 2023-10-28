@@ -7,7 +7,7 @@ const TextInput = ({
     type = "text"
 } : {value: string; onChange: Function; placeholder: string; type?: string}) => {
 
-    const handleChange = ({e} : {e: React.ChangeEvent<HTMLInputElement>}) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange(e.target.value);
     };
 
@@ -16,7 +16,7 @@ const TextInput = ({
             <input
                 type={type}
                 value={value}
-                onChange={() => handleChange}
+                onChange={handleChange}
                 placeholder={placeholder}
             />
         </div>

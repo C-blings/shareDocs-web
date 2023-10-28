@@ -1,5 +1,5 @@
 import {BasicAPI} from "./BasicAPI";
-import app from "../../App";
+import app from "../../ui/views/App";
 import {injectable} from "tsyringe";
 import AppDTO from "../dto/AppDTO";
 @injectable()
