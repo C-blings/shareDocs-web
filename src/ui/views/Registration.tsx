@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {view} from "@yoskutik/react-vvm";
 import RegistrationViewModel from "../viewmodels/RegistrationViewModel";
 import Title from "../atoms/Title";
 import TextInput from "../atoms/TextInput";
-import Button from "../atoms/Button";
+import CustomButton from "../atoms/CustomButton";
 
 const RegistrationView = view(RegistrationViewModel)(({viewModel}) => {
     const nicknamePlaceholder = "Введите свой никнейм";
@@ -11,28 +11,32 @@ const RegistrationView = view(RegistrationViewModel)(({viewModel}) => {
     const passwordPlaceholder = "Введите пароль";
     const buttonText = "Зарегистрироваться";
 
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [nickname, setNickname] = useState("");
+
     return (
         <div>
             <Title text={"Registration"}/>
             <TextInput
-                value={viewModel.getNickname()}
-                onChange={viewModel.handleNicknameChange}
+                value={nickname}
+                onChange={setNickname}
                 placeholder={nicknamePlaceholder}
             />
             <TextInput
-                value={viewModel.getEmail()}
-                onChange={viewModel.handleEmailChange}
+                value={email}
+                onChange={setEmail}
                 placeholder={emailPlaceholder}
             />
             <TextInput
-                value={viewModel.getPassword()}
-                onChange={viewModel.handlePasswordChange}
+                value={password}
+                onChange={setPassword}
                 type={"password"}
                 placeholder={passwordPlaceholder}
             />
-            <Button
+            <CustomButton
                 text={buttonText}
-                onClick={viewModel.onButtonClick}
+                onClick={ () => {viewModel.onButtonClick(email, password, nickname)}}
             />
         </div>
     );
