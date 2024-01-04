@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/AppStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/AppStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -123,7 +122,8 @@
       <workItem from="1697360078037" duration="3147000" />
       <workItem from="1697389922336" duration="105000" />
       <workItem from="1697399999876" duration="3719000" />
-      <workItem from="1697643662155" duration="649000" />
+      <workItem from="1697643662155" duration="871000" />
+      <workItem from="1702983295969" duration="59000" />
     </task>
     <servers />
   </component>
