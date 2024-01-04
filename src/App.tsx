@@ -1,15 +1,29 @@
-import React from 'react';
-import {computed, makeObservable} from "mobx";
-import {view, ViewModel} from "@yoskutik/react-vvm";
-import {AppStore} from "./data/repository/AppStore";
-import {injectable} from "tsyringe";
+import React, {useState} from 'react';
+import {view} from "@yoskutik/react-vvm";
 import AppViewModel from "./ui/viewmodels/AppViewModel";
+import BasicButton from "./ui/atoms/Basic/BasicButton";
+import {Divider, useTheme} from "@material-ui/core";
+import BasicInput from "./ui/atoms/Basic/BasicInput";
 
-const App = view(AppViewModel)(({viewModel}) => (
-    <div className="App">
-      <h1>{viewModel.text}</h1>
-      <button onClick={viewModel.onChangeGreeting}>Click me</button>
-    </div>
-));
+const App = view(AppViewModel)(({viewModel}) => {
+
+    const [val, setVal] = useState("");
+
+    return (
+        <div className="App">
+            <h1>{viewModel.text}</h1>
+            <BasicButton onClick={viewModel.onChangeGreeting} color={useTheme().palette.error} variant="contained">
+                Click me
+            </BasicButton>
+            <br/>
+            <BasicInput
+                label={"Test"}
+                variant={"outlined"}
+                value={val}
+                onChange={setVal}
+            />
+        </div>
+    )
+});
 
 export default App;

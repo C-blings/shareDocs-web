@@ -9,6 +9,8 @@ import Registration from "./ui/components/Registration";
 import {container} from "tsyringe";
 import {configure} from "@yoskutik/react-vvm";
 import Profile from "./ui/components/Profile";
+import {ThemeProvider} from "@material-ui/core";
+import theme from "./theme/theme";
 
 configure({
     vmFactory: VM => container.resolve(VM),
@@ -36,7 +38,9 @@ const router = createBrowserRouter([
 
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <ThemeProvider theme={theme}>
+            <RouterProvider router={router}/>
+        </ThemeProvider>
     </React.StrictMode>
 );
 
