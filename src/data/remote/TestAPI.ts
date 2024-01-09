@@ -1,16 +1,16 @@
 import {BasicAPI} from "./BasicAPI";
 import app from "../../App";
 import {injectable} from "tsyringe";
-import AppDTO from "../dto/AppDTO";
+import TestDTO from "../dto/TestDTO";
 @injectable()
-export class AppAPI extends BasicAPI {
+export class TestAPI extends BasicAPI {
 
     constructor() {
         super();
     }
 
     getApp = () => {
-        return AppAPI.api.get<unknown, AppDTO>('/')
+        return TestAPI.api.get<unknown, TestDTO>('/')
     }
 
 }

@@ -1,29 +1,18 @@
 import React, {useState} from 'react';
 import {view} from "@yoskutik/react-vvm";
-import AppViewModel from "./ui/viewmodels/AppViewModel";
+import TestViewModel from "./ui/viewmodels/TestViewModel";
 import BasicButton from "./ui/atoms/Basic/BasicButton";
 import {Divider, useTheme} from "@material-ui/core";
 import BasicInput from "./ui/atoms/Basic/BasicInput";
+import PasswordInput from "./ui/atoms/Inputs/PasswordInput";
 
-const App = view(AppViewModel)(({viewModel}) => {
-
-    const [val, setVal] = useState("");
+const App = () => {
 
     return (
         <div className="App">
-            <h1>{viewModel.text}</h1>
-            <BasicButton onClick={viewModel.onChangeGreeting} color={useTheme().palette.error} variant="contained">
-                Click me
-            </BasicButton>
-            <br/>
-            <BasicInput
-                label={"Test"}
-                variant={"outlined"}
-                value={val}
-                onChange={setVal}
-            />
+
         </div>
     )
-});
+}
 
 export default App;

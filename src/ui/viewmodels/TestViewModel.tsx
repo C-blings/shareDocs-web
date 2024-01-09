@@ -1,15 +1,15 @@
 import {injectable} from "tsyringe";
 import {ViewModel} from "@yoskutik/react-vvm";
 import {computed, makeObservable} from "mobx";
-import {AppStore} from "../../data/repository/AppStore";
+import {TestStore} from "../../data/repository/TestStore";
 
 @injectable()
-class AppViewModel extends ViewModel {
+class TestViewModel extends ViewModel {
     @computed get text(): string {
         return this.app.greetingText;
     }
 
-    constructor(private app: AppStore) {
+    constructor(private app: TestStore) {
         super();
         makeObservable(this);
     }
@@ -19,4 +19,4 @@ class AppViewModel extends ViewModel {
     }
 }
 
-export default AppViewModel
+export default TestViewModel

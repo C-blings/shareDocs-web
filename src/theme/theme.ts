@@ -31,9 +31,19 @@ declare module '@material-ui/core/styles/createPalette' {
 const { palette } = createTheme();
 const theme = createTheme({
     palette: {
+        background: {
+            default: Colors.backgroundPrimary
+        },
+        text: {
+            primary: Colors.labelPrimary
+        },
         primary: {
             main: Colors.backgroundSecondary,
             contrastText: Colors.labelPrimary,
+        },
+        secondary: {
+            main: Colors.labelSecondary,
+            contrastText: Colors.backgroundSecondary,
         },
         // Label
         labelPrimary: palette.augmentColor({
@@ -61,7 +71,33 @@ const theme = createTheme({
         success: {
             main: Colors.success
         },
-    }
+    },
+    typography: {
+        h1: {
+
+        },
+        h2: {
+
+        },
+        h3: {
+
+        },
+        h5: {
+
+        },
+        h6: {
+
+        },
+        subtitle1: {
+
+        },
+        body1: {
+
+        },
+        body2: {
+
+        },
+    },
 })
 
 export default theme

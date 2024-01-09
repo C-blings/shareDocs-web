@@ -1,13 +1,13 @@
 import {injectable, singleton} from "tsyringe";
 import {action, makeObservable, observable, runInAction} from "mobx";
 import axios from "axios";
-import {AppAPI} from "../remote/AppAPI";
+import {TestAPI} from "../remote/TestAPI";
 
 @singleton()
-export class AppStore {
+export class TestStore {
     @observable greetingText = 'Привет, дорогой пользователь'
 
-    constructor(private api: AppAPI) {
+    constructor(private api: TestAPI) {
         makeObservable(this);
     }
 

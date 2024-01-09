@@ -3,14 +3,24 @@ import Button from "@material-ui/core/Button";
 import {alpha, styled, useTheme} from "@material-ui/core";
 import theme from "../../../theme/theme";
 import {PaletteColor} from "@material-ui/core/styles/createPalette";
+import {TypographyStyleOptions} from "@material-ui/core/styles/createTypography";
 
 const BasicButton = (
-    {children, onClick, color = theme.palette.primary, variant = 'contained'}:
+    {
+        children,
+        onClick,
+        color = theme.palette.primary,
+        variant = 'contained',
+        style = theme.typography.body2,
+        className
+    }:
         {
             children?: React.ReactNode,
             onClick?: () => void,
             color?: PaletteColor,
             variant?: 'text' | 'outlined' | 'contained',
+            style?: TypographyStyleOptions,
+            className?: any
         }
 ) => {
     const TextButton = styled(Button)({
@@ -41,32 +51,32 @@ const BasicButton = (
         }
     })
 
-    if(variant == 'text') {
+    if (variant == 'text') {
         return (
-            <div>
-                <TextButton
-                    onClick={onClick}
-                    variant={variant}
-                    children={children}/>
-            </div>
+            <TextButton
+                onClick={onClick}
+                variant={variant}
+                style={style}
+                children={children}
+                className={className}/>
         )
-    } else if(variant == 'outlined') {
+    } else if (variant == 'outlined') {
         return (
-            <div>
-                <OutlinedButton
-                    onClick={onClick}
-                    variant={variant}
-                    children={children}/>
-            </div>
+            <OutlinedButton
+                onClick={onClick}
+                variant={variant}
+                style={style}
+                children={children}
+                className={className}/>
         )
     } else {
         return (
-            <div>
-                <ContainedButton
-                    onClick={onClick}
-                    variant={variant}
-                    children={children}/>
-            </div>
+            <ContainedButton
+                onClick={onClick}
+                variant={variant}
+                style={style}
+                children={children}
+                className={className}/>
         )
     }
 }
