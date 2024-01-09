@@ -29,6 +29,14 @@ const Test = view(TestViewModel)(({viewModel}) => {
                 value={val}
                 onChange={setVal}
             />
+            <br/>
+            <BasicInput
+                label={"email"}
+                style={useTheme().typography.h3}
+                value={val}
+                onChange={setVal}
+                type={"email"}
+            />
             <PasswordInput
                 label={"Password"}
                 variant={"outlined"}

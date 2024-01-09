@@ -55,6 +55,7 @@
     "react-dom": "^18.2.0",
     "react-refresh": "^0.11.0",
     "react-router-dom": "^6.16.0",
+    "react-text-mask": "^5.5.0",
     "reflect-metadata": "^0.1.13",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
@@ -96,6 +97,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-text-mask": "^5.4.14",
     "tsconfig-replace-paths": "0.0.14"
   },
   "jest": {
