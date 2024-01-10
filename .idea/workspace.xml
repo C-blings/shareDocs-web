@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
-      <change afterPath="$PROJECT_DIR$/src/ui/atoms/Inputs/PhoneInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Inputs/PasswordInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Inputs/PasswordInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Test.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +133,7 @@
       <workItem from="1704457335733" duration="2183000" />
       <workItem from="1704459533606" duration="9043000" />
       <workItem from="1704793971259" duration="619000" />
-      <workItem from="1704795275424" duration="9070000" />
+      <workItem from="1704795275424" duration="9842000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />
