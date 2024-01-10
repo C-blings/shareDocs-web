@@ -2,7 +2,9 @@
   "name": "shared-docs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://c-blings.github.io/shareDocs-web/",
   "dependencies": {
+    "react-scripts": "^5.0.1",
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -79,7 +81,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "CI=false && node scripts/build.js",
+    "build": "CI=false && react-scripts build",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -106,7 +108,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-text-mask": "^5.4.14",
     "gh-pages": "^6.1.1",
-    "tsconfig-replace-paths": "0.0.14"
+    "tsconfig-replace-paths": "0.0.14",
+    "webpack-cli": "^5.1.4"
   },
   "jest": {
     "roots": [
@@ -163,6 +166,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "homepage": "https://c-blings.github.io/shareDocs-web/"
+  }
 }
