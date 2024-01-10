@@ -81,7 +81,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

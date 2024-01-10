@@ -43,11 +43,10 @@ const router = createBrowserRouter([
 
 root.render(
     <React.StrictMode>
-        <h1>Hello</h1>
-        {/*<ThemeProvider theme={theme}>*/}
-        {/*    <CssBaseline />*/}
-        {/*    <RouterProvider router={router}/>*/}
-        {/*</ThemeProvider>*/}
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <RouterProvider router={router}/>
+        </ThemeProvider>
     </React.StrictMode>
 );
 
