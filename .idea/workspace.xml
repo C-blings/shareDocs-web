@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±" />
+    <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/node.js.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node.js.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +135,7 @@
       <workItem from="1704459533606" duration="9043000" />
       <workItem from="1704793971259" duration="619000" />
       <workItem from="1704795275424" duration="9842000" />
-      <workItem from="1704899540768" duration="1491000" />
+      <workItem from="1704899540768" duration="1802000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />
