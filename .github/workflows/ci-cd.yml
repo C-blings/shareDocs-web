@@ -13,10 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -24,7 +20,7 @@ jobs:
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 16.x
 
     - name: Cache dependencies
       uses: actions/cache@v2
@@ -50,6 +46,7 @@ jobs:
       with:
         name: production-files
         path: ./build
+
   deploy:
     name: Deploy
     needs: build
