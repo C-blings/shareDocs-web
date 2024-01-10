@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, createHashRouter, RouterProvider} from "react-router-dom";
 import Registration from "./ui/components/Registration";
 import {container} from "tsyringe";
 import {configure} from "@yoskutik/react-vvm";
@@ -21,21 +21,23 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
-const router = createBrowserRouter([
+const appName = "/shareDocs-web"
+
+const router = createHashRouter([
     {
-        path: "/",
+        path: appName + "/",
         element: <App/>
     },
     {
-        path: "/test",
+        path: appName + "/test",
         element: <Test/>
     },
     {
-        path: "profile/:id",
+        path: appName + "/profile/:id",
         element: <Profile/>
     },
     {
-        path: "registration",
+        path: appName + "/registration",
         element: <Registration/>
     }
 ])

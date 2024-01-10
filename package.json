@@ -2,7 +2,7 @@
   "homepage": "https://c-blings.github.io/shareDocs-web/",
   "name": "shared-docs",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react-scripts": "^5.0.1",
     "@babel/core": "^7.16.0",
