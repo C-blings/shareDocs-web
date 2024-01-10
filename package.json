@@ -39,7 +39,6 @@
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
-    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
@@ -104,9 +103,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-text-mask": "^5.4.14",
-    "tsconfig-replace-paths": "0.0.14",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "gh-pages": "^6.1.1",
+    "tsconfig-replace-paths": "0.0.14"
   },
   "jest": {
     "roots": [
@@ -164,5 +164,5 @@
       "react-app"
     ]
   },
-  "homepage": "https://github.com/C-blings/shareDocs-web"
+  "homepage": "https://c-blings.github.io/shareddocs"
 }
