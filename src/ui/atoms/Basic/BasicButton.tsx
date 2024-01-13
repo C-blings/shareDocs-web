@@ -15,6 +15,7 @@ export interface BasicButtonProps {
     className?: any
 }
 
+
 const BasicButton = (props: BasicButtonProps) => {
     const {color, variant, ...other} = props
     const TextButton = styled(Button)({
@@ -69,7 +70,7 @@ const BasicButton = (props: BasicButtonProps) => {
     }
 }
 
-BasicButton.deafaultProps = {
+BasicButton.defaultProps = {
     color: theme.palette.secondary
 }
 
