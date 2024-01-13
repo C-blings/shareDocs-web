@@ -32,16 +32,22 @@ const useStyle = makeStyles((theme: Theme) => createStyles({
 
 const RegistrationField = (
     {
+        login,
+        handleLoginChange,
         email,
         handleEmailChange,
         password,
-        handlePasswordChange
+        handlePasswordChange,
+        onClick
     }:
         {
+            login: string,
+            handleLoginChange: (value: any) => void,
             email: string,
             handleEmailChange: (value: any) => void,
             password: string,
-            handlePasswordChange: (value: any) => void
+            handlePasswordChange: (value: any) => void,
+            onClick: () => void
         }
 ) => {
 
@@ -50,6 +56,14 @@ const RegistrationField = (
     return (
         <div className={classes.main}>
             <List>
+                <ListItem>
+                    <BasicInput
+                        className={classes.input}
+                        value={login}
+                        onChange={handleLoginChange}
+                        placeholder={Strings.email_placeholder}
+                    />
+                </ListItem>
                 <ListItem>
                     <BasicInput
                         className={classes.input}
@@ -68,8 +82,8 @@ const RegistrationField = (
                 </ListItem>
                 <ListItem>
                     <BasicButton
-                        color={theme.palette.primary}
                         className={classes.button}
+                        onClick={onClick}
                     >
                         {Strings.sign_in}
                     </BasicButton>

@@ -22,7 +22,7 @@ const BasicButton = (props: BasicButtonProps) => {
         color: color!.main,
         '&:hover': {
             backgroundColor: (alpha)(color!.main, theme.palette.action.hoverOpacity),
-        }
+        },
     })
 
     const OutlinedButton = styled(Button)({
@@ -71,7 +71,7 @@ const BasicButton = (props: BasicButtonProps) => {
 }
 
 BasicButton.defaultProps = {
-    color: theme.palette.secondary
+    color: theme.palette.primary
 }
 
 export default BasicButton

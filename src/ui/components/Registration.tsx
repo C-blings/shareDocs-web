@@ -1,10 +1,10 @@
 import RegistrationField from "../molecules/RegistrationField";
-import {autoInjectable, container, inject, injectable, singleton} from "tsyringe";
 import React, {useState} from "react";
-import {ViewModel} from "@yoskutik/react-vvm";
-import {createStyles, makeStyles, Theme, useTheme} from "@material-ui/core";
-import {Colors} from "../../theme/colors";
-const Registration = () => {
+import {view} from "@yoskutik/react-vvm";
+import RegistrationViewModel from "../viewmodels/RegistrationViewModel";
+
+const Registration =  view(RegistrationViewModel)(({viewModel}) => {
+    const [login, setLogin] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handlePasswordChange = (value: string) => {
@@ -15,14 +15,26 @@ const Registration = () => {
         setEmail(value);
     };
 
+    const handleLoginChange = (value: string) => {
+        setLogin(value);
+    };
+
+    const addUser = () => {
+        viewModel.onGettingUser({login, email, password});
+    };
+
+
     return (
         <RegistrationField
+            login={login}
+            handleLoginChange={handleLoginChange}
             email={email}
             handleEmailChange={handleEmailChange}
             password={password}
             handlePasswordChange={handlePasswordChange}
+            onClick={addUser}
         />
     )
-}
+});
 
 export default Registration
