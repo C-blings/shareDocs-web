@@ -1,6 +1,6 @@
 import React from "react";
 import BasicInput from "../atoms/Basic/BasicInput";
-import {createStyles, List, ListItem, makeStyles, Theme} from "@material-ui/core";
+import {createStyles, List, ListItem, makeStyles, Theme, useTheme} from "@material-ui/core";
 import {Strings} from "../../theme/strings";
 import PasswordInput from "../atoms/Inputs/PasswordInput";
 import BasicButton from "../atoms/Basic/BasicButton";
@@ -46,6 +46,7 @@ const RegistrationField = (
 ) => {
 
     const classes = useStyle()
+    const theme = useTheme()
     return (
         <div className={classes.main}>
             <List>
@@ -67,6 +68,7 @@ const RegistrationField = (
                 </ListItem>
                 <ListItem>
                     <BasicButton
+                        color={theme.palette.primary}
                         className={classes.button}
                     >
                         {Strings.sign_in}
