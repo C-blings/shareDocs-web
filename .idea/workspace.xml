@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Inputs/PhoneInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Inputs/PhoneInput.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <recent name="$PROJECT_DIR$/shared-docs/node_modules" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.deploy">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -117,9 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
@@ -149,6 +150,8 @@
       <workItem from="1704899540768" duration="12490000" />
       <workItem from="1704912220058" duration="3496000" />
       <workItem from="1704997196822" duration="217000" />
+      <workItem from="1705158404588" duration="139000" />
+      <workItem from="1705160308606" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />

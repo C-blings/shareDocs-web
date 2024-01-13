@@ -6,6 +6,7 @@ import theme from "../../../theme/theme";
 import {TypographyStyleOptions} from "@material-ui/core/styles/createTypography";
 import {InputProps as StandardInputProps} from "@material-ui/core/Input/Input";
 
+// TODO: доделать эту функцию
 export interface PhoneMaskCustomProps {
     inputRef: (ref: HTMLInputElement | null) => void;
 }
