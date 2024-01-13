@@ -21,32 +21,30 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
-const appName = "/shareDocs-web"
-
-const router = createHashRouter([
-    {
-        path: appName + "/",
-        element: <App/>
-    },
-    {
-        path: appName + "/test",
-        element: <Test/>
-    },
-    {
-        path: appName + "/profile/:id",
-        element: <Profile/>
-    },
-    {
-        path: appName + "/registration",
-        element: <Registration/>
-    }
-])
+const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <App/>
+        },
+        {
+            path: "/test",
+            element: <Test/>
+        },
+        {
+            path: "/profile/:id",
+            element: <Profile/>
+        },
+        {
+            path: "/registration",
+            element: <Registration/>
+        }
+    ])
 
 
 root.render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
-            <CssBaseline />
+            <CssBaseline/>
             <RouterProvider router={router}/>
         </ThemeProvider>
     </React.StrictMode>
