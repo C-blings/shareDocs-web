@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
-      <change afterPath="$PROJECT_DIR$/src/data/dto/RegistrationDTO.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/remote/BasicAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/BasicAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/remote/TestAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/TestAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BasicRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/TestStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/TestRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/strings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Registration.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

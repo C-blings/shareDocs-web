@@ -10,7 +10,7 @@ export class RegistrationAPI extends BasicAPI {
     }
 
     sendUser = (user: User) => {
-        RegistrationAPI.api.post('/add-user')
+        RegistrationAPI.api.post('/add-user', user)
     }
 
 }
