@@ -4,7 +4,7 @@ import axios from "axios";
 import {TestAPI} from "../remote/TestAPI";
 
 @singleton()
-export class TestRepository {
+export class TestStore {
     @observable greetingText = 'Привет, дорогой пользователь'
 
     constructor(private api: TestAPI) {

@@ -1,7 +1,7 @@
 import {injectable} from "tsyringe";
 import {ViewModel} from "@yoskutik/react-vvm";
 import {computed, makeObservable} from "mobx";
-import {TestRepository} from "../../data/repository/TestRepository";
+import {TestStore} from "../../data/repository/TestStore";
 
 @injectable()
 class TestViewModel extends ViewModel {
@@ -9,7 +9,7 @@ class TestViewModel extends ViewModel {
         return this.app.greetingText;
     }
 
-    constructor(private app: TestRepository) {
+    constructor(private app: TestStore) {
         super();
         makeObservable(this);
     }

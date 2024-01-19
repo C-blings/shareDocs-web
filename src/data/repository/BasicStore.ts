@@ -1,5 +1,5 @@
 
-export class BasicRepository {
+export class BasicStore {
 
     constructor() {
 
