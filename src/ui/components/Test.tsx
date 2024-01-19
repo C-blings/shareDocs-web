@@ -37,13 +37,6 @@ const Test = view(TestViewModel)(({viewModel}) => {
                 onChange={setVal}
                 type={"email"}
             />
-            <PasswordInput
-                label={"Password"}
-                variant={"outlined"}
-                style={useTheme().typography.h1}
-                value={val}
-                onChange={setVal}
-            />
         </div>
     )
 });
