@@ -1,19 +1,17 @@
-import BasicInput, {BasicInputProps} from "../Basic/BasicInput";
-import React, {MouseEventHandler, useState} from "react";
-import {IconButton, InputAdornment, TextFieldProps} from "@material-ui/core";
+import BasicInput from "../Basic/BasicInput";
+import React, {useState} from "react";
+import {IconButton, InputAdornment} from "@material-ui/core";
 import {Visibility, VisibilityOff} from '@material-ui/icons';
-import {InputProps as StandardInputProps} from "@material-ui/core/Input/Input";
-import theme from "../../../theme/theme";
-import {TypographyStyleOptions} from "@material-ui/core/styles/createTypography";
+import InputWithError, {InputWithErrorProps} from "./InputWithError";
 
-const PasswordInput = (props: BasicInputProps) => {
+const PasswordInput = (props: InputWithErrorProps) => {
     const {...other} = props
 
     const [showPassword, setShowPassword] = useState(false)
     const handleClickShowPassword = () => setShowPassword(!showPassword);
 
     return (
-        <BasicInput
+        <InputWithError
             {...other}
             type={showPassword ? 'text' : 'password'}
             inputProps={{
