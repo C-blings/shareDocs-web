@@ -20,7 +20,6 @@ const useStyle = makeStyles((theme: Theme) => createStyles({
     input: {
         width: 400,
         height: 60,
-        borderColor: "red",
     },
     button: {
         margin: "auto",
@@ -80,7 +79,7 @@ const RegistrationField = (
 =======
                         value={login}
                         onChange={handleLoginChange}
-                        placeholder={Strings.email_placeholder}
+                        placeholder={Strings.login_placeholder}
                         errorState={loginErrorState}
                     />
                 </ListItem>

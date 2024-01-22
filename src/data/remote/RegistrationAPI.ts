@@ -14,7 +14,7 @@ export class RegistrationAPI extends BasicAPI {
     }
 
     checkIfUserExists = (user: User) => {
-        return RegistrationAPI.api.get<CheckIfUserExist>(`/check-if-user-exists?${user.login}`);
+        return RegistrationAPI.api.get<CheckIfUserExist>(`/check-if-user-exists?login=${user.login}`);
     }
 
 }
