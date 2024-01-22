@@ -49,7 +49,7 @@ const Registration = () => {
             emailErrorState={viewModel.emailErrorState}
             passwordErrorState={viewModel.passwordErrorState}
         />
-        <p>{viewModel.requestErrorState}</p>
+        <p>{viewModel.requestError}</p>
     </>
 
 });

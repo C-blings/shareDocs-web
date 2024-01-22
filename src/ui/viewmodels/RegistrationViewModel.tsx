@@ -10,7 +10,7 @@ class RegistrationViewModel extends ViewModel {
     @observable loginErrorState: ErrorState;
     @observable emailErrorState: ErrorState;
     @observable passwordErrorState: ErrorState;
-    @observable requestErrorState = '';
+    @observable requestError = '';
 
     constructor(private app: RegistrationRepository) {
         super();
@@ -21,8 +21,16 @@ class RegistrationViewModel extends ViewModel {
     }
 
     sendUser = (user: User) => {
-        if (this.app.checkIfUserExists(user)){
-            this.app.sendUser(user);
+        if (!(this.loginErrorState.isCorrect() && this.emailErrorState.isCorrect() && this.passwordErrorState.isCorrect())){
+            this.requestError = 'fill all fields correctly'
+            return;
+        }
+        alert(this.app.checkIfUserExists(user))
+        if (!this.app.checkIfUserExists(user)){
+           this.app.sendUser(user);
+        } else {
+
+            this.requestError = 'user with this login already exists'
         }
     }
 

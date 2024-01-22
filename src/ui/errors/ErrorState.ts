@@ -29,10 +29,10 @@ export default class ErrorState{
     changeStateWithPredicate = (value: boolean) => {
         if (!value){
             this.value = this.activeValue;
-            this.state = State.CORRECT;
+            this.state = State.INCORRECT;
         }else{
             this.value = this.defaultValue;
-            this.state = State.INCORRECT;
+            this.state = State.CORRECT;
         }
     }
 
