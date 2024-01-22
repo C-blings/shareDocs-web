@@ -48,8 +48,8 @@ const Registration = () => {
             loginErrorState={viewModel.loginErrorState}
             emailErrorState={viewModel.emailErrorState}
             passwordErrorState={viewModel.passwordErrorState}
+            requestError={viewModel.requestError}
         />
-        <p>{viewModel.requestError}</p>
     </>
 
 });

@@ -37,32 +37,30 @@ const useStyle = makeStyles((theme: Theme) => createStyles({
 
 const RegistrationField = (
     {
+        login,
+        handleLoginChange,
         email,
         handleEmailChange,
         password,
-<<<<<<< HEAD
-        handlePasswordChange
-=======
         handlePasswordChange,
         onClick,
         loginErrorState,
         emailErrorState,
-        passwordErrorState
->>>>>>> 9588e80 (feat registration panel: add errors and user check)
+        passwordErrorState,
+        requestError
     }:
         {
+            login: string,
+            handleLoginChange: (value: any) => void,
             email: string,
             handleEmailChange: (value: any) => void,
             password: string,
-<<<<<<< HEAD
-            handlePasswordChange: (value: any) => void
-=======
             handlePasswordChange: (value: any) => void,
             onClick: () => void,
             loginErrorState: ErrorState,
             emailErrorState: ErrorState,
-            passwordErrorState: ErrorState
->>>>>>> 9588e80 (feat registration panel: add errors and user check)
+            passwordErrorState: ErrorState,
+            requestError: string
         }
 ) => {
 
@@ -75,8 +73,6 @@ const RegistrationField = (
                     <InputWithError
                         errorClassName={classes.error}
                         className={classes.input}
-<<<<<<< HEAD
-=======
                         value={login}
                         onChange={handleLoginChange}
                         placeholder={Strings.login_placeholder}
@@ -87,7 +83,6 @@ const RegistrationField = (
                     <InputWithError
                         errorClassName={classes.error}
                         className={classes.input}
->>>>>>> 9588e80 (feat registration panel: add errors and user check)
                         value={email}
                         onChange={handleEmailChange}
                         placeholder={Strings.email_placeholder}
@@ -106,11 +101,14 @@ const RegistrationField = (
                 </ListItem>
                 <ListItem>
                     <BasicButton
-                        color={theme.palette.primary}
                         className={classes.button}
+                        onClick={onClick}
                     >
                         {Strings.sign_up}
                     </BasicButton>
+                </ListItem>
+                <ListItem>
+                    <p className={classes.error}>{requestError}</p>
                 </ListItem>
             </List>
         </div>

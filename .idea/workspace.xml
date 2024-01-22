@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Basic/BasicButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/atoms/Inputs/PhoneInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/atoms/Inputs/PhoneInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Registration.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Registration.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/molecules/RegistrationField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2WmMO4zNoHMb6c28Qh30bmwiL7D" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,7 +54,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;registration__panel&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -55,7 +62,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/sliderer/Cblings/shareDocs-web/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -152,6 +159,14 @@
       <workItem from="1704997196822" duration="217000" />
       <workItem from="1705158404588" duration="139000" />
       <workItem from="1705160308606" duration="918000" />
+      <workItem from="1705323123440" duration="4731000" />
+      <workItem from="1705656280728" duration="652000" />
+      <workItem from="1705670627341" duration="1190000" />
+      <workItem from="1705674846884" duration="601000" />
+      <workItem from="1705908079423" duration="1983000" />
+      <workItem from="1705910466849" duration="1327000" />
+      <workItem from="1705919819001" duration="353000" />
+      <workItem from="1705920828912" duration="937000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />
