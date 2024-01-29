@@ -5,6 +5,14 @@ import {RegistrationRepository} from "../../data/repository/RegistrationReposito
 import User from "../../data/dto/RegistrationDTO";
 import ErrorState from "../errors/ErrorState";
 
+enum Error {
+    IncorrectLogin = 'login is incorrect',
+    IncorrectEmail = 'email is incorrect',
+    IncorrectPassword = 'password is incorrect',
+    IncorrectFields = 'fill all fields correctly',
+    UserExists = 'user with this login already exists'
+}
+
 @injectable()
 class RegistrationViewModel extends ViewModel {
     @observable loginErrorState: ErrorState;
@@ -15,14 +23,14 @@ class RegistrationViewModel extends ViewModel {
     constructor(private app: RegistrationRepository) {
         super();
         makeObservable(this);
-        this.loginErrorState = new ErrorState('', 'login is incorrect');
-        this.emailErrorState = new ErrorState('', 'email is incorrect');
-        this.passwordErrorState = new ErrorState('', 'password is incorrect');
+        this.loginErrorState = new ErrorState('', Error.IncorrectLogin);
+        this.emailErrorState = new ErrorState('', Error.IncorrectEmail);
+        this.passwordErrorState = new ErrorState('', Error.IncorrectPassword);
     }
 
     sendUser = (user: User) => {
         if (!(this.loginErrorState.isCorrect() && this.emailErrorState.isCorrect() && this.passwordErrorState.isCorrect())){
-            this.requestError = 'fill all fields correctly'
+            this.requestError = Error.IncorrectFields;
             return;
         }
         this.app.checkIfUserExists(user).then(
@@ -30,7 +38,7 @@ class RegistrationViewModel extends ViewModel {
                 if (!result){
                     this.app.sendUser(user);
                 } else {
-                    this.requestError = 'user with this login already exists';
+                    this.requestError = Error.UserExists;
                 }
             }
         )

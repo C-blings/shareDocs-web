@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" afterDir="false" />
+>>>>>>> f2cd69b (feat registration: remove hardcode)
       <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +50,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -61,6 +66,23 @@
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/home/sliderer/projects/Cblings/shareDocs-web/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;registration__panel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sliderer/projects/bang-board-game-frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/sliderer/Cblings/shareDocs-web/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> f2cd69b (feat registration: remove hardcode)
   }
 }]]></component>
   <component name="RecentsManager">
@@ -164,6 +186,9 @@
       <workItem from="1705910466849" duration="1327000" />
       <workItem from="1705919819001" duration="353000" />
       <workItem from="1705920828912" duration="937000" />
+      <workItem from="1705931383330" duration="127000" />
+      <workItem from="1706024654709" duration="38000" />
+      <workItem from="1706542293973" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />

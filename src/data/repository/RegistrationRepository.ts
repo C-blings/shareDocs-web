@@ -5,8 +5,6 @@ import User from "../dto/RegistrationDTO";
 
 @singleton()
 export class RegistrationRepository {
-    @observable error = 'error'
-
     constructor(private api: RegistrationAPI) {
         makeObservable(this);
     }
