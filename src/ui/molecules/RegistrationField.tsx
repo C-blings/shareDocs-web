@@ -4,10 +4,12 @@ import {createStyles, List, ListItem, makeStyles, Theme, useTheme} from "@materi
 import {Strings} from "../../theme/strings";
 import PasswordInput from "../atoms/Inputs/PasswordInput";
 import BasicButton from "../atoms/Basic/BasicButton";
+import ErrorState from "../errors/ErrorState";
+import InputWithError from "../atoms/Inputs/InputWithError";
 
 const useStyle = makeStyles((theme: Theme) => createStyles({
     main: {
-        display: "flex",
+        display: "block",
         justifyContent: "center",
         alignItems: "center",
         position: "fixed",
@@ -18,30 +20,47 @@ const useStyle = makeStyles((theme: Theme) => createStyles({
     input: {
         width: 400,
         height: 60,
-        margin: 40
     },
     button: {
-
-        width: 120,
-        height: 49,
-        marginTop: 20,
-        marginLeft: 180,
-        marginRight: 180,
+        margin: "auto",
+        padding: "10px",
+        borderRadius: "5px"
+    },
+    error: {
+        margin: "auto",
+        textAlign: "center",
+        color: "red",
+        alignItems: "center",
+        display: "flex"
     }
 }))
 
 const RegistrationField = (
     {
+        login,
+        handleLoginChange,
         email,
         handleEmailChange,
         password,
-        handlePasswordChange
+        handlePasswordChange,
+        onClick,
+        loginErrorState,
+        emailErrorState,
+        passwordErrorState,
+        requestError
     }:
         {
+            login: string,
+            handleLoginChange: (value: any) => void,
             email: string,
             handleEmailChange: (value: any) => void,
             password: string,
-            handlePasswordChange: (value: any) => void
+            handlePasswordChange: (value: any) => void,
+            onClick: () => void,
+            loginErrorState: ErrorState,
+            emailErrorState: ErrorState,
+            passwordErrorState: ErrorState,
+            requestError: string
         }
 ) => {
 
@@ -51,28 +70,45 @@ const RegistrationField = (
         <div className={classes.main}>
             <List>
                 <ListItem>
-                    <BasicInput
+                    <InputWithError
+                        errorClassName={classes.error}
+                        className={classes.input}
+                        value={login}
+                        onChange={handleLoginChange}
+                        placeholder={Strings.login_placeholder}
+                        errorState={loginErrorState}
+                    />
+                </ListItem>
+                <ListItem>
+                    <InputWithError
+                        errorClassName={classes.error}
                         className={classes.input}
                         value={email}
                         onChange={handleEmailChange}
                         placeholder={Strings.email_placeholder}
+                        errorState={emailErrorState}
                     />
                 </ListItem>
                 <ListItem>
                     <PasswordInput
+                        errorClassName={classes.error}
                         className={classes.input}
                         value={password}
                         onChange={handlePasswordChange}
                         placeholder={Strings.password_placeholder}
+                        errorState={passwordErrorState}
                     />
                 </ListItem>
                 <ListItem>
                     <BasicButton
-                        color={theme.palette.primary}
                         className={classes.button}
+                        onClick={onClick}
                     >
-                        {Strings.sign_in}
+                        {Strings.sign_up}
                     </BasicButton>
+                </ListItem>
+                <ListItem>
+                    <p className={classes.error}>{requestError}</p>
                 </ListItem>
             </List>
         </div>

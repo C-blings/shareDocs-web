@@ -14,6 +14,7 @@ export type BasicInputProps = {
     style?: TypographyStyleOptions,
     inputProps?: Partial<StandardInputProps>,
     error?: boolean,
+    borderColor?: string,
     className?: any
 }
 
