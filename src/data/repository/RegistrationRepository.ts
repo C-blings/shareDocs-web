@@ -6,7 +6,7 @@ import User from "../dto/RegistrationDTO";
 @singleton()
 export class RegistrationRepository {
     constructor(private api: RegistrationAPI) {
-        makeObservable(this);
+
     }
 
     checkIfUserExists = async (user: User) => {

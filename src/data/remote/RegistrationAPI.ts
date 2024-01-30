@@ -1,14 +1,9 @@
 import {BasicAPI} from "./BasicAPI";
-import {injectable} from "tsyringe";
+import {injectable, singleton} from "tsyringe";
 import User, {CheckIfUserExist} from "../dto/RegistrationDTO";
 
-@injectable()
+@singleton()
 export class RegistrationAPI extends BasicAPI {
-
-    constructor() {
-        super();
-    }
-
     sendUser = (user: User) => {
         RegistrationAPI.api.post('/add-user', user)
     }
