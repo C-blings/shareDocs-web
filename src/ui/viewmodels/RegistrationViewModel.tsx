@@ -4,6 +4,7 @@ import {makeObservable, observable} from "mobx";
 import {RegistrationRepository} from "../../data/repository/RegistrationRepository";
 import User from "../../data/dto/RegistrationDTO";
 import ErrorState from "../errors/ErrorState";
+import {BasicViewModel} from "./BasicViewModel";
 
 enum Error {
     IncorrectLogin = 'login is incorrect',
@@ -14,7 +15,7 @@ enum Error {
 }
 
 @injectable()
-class RegistrationViewModel extends ViewModel {
+class RegistrationViewModel extends BasicViewModel {
     @observable loginErrorState: ErrorState;
     @observable emailErrorState: ErrorState;
     @observable passwordErrorState: ErrorState;
