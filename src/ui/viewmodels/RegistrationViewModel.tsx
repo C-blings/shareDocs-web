@@ -15,7 +15,7 @@ enum Error {
 }
 
 @injectable()
-class RegistrationViewModel extends BasicViewModel {
+class RegistrationViewModel extends ViewModel {
     @observable loginErrorState: ErrorState;
     @observable emailErrorState: ErrorState;
     @observable passwordErrorState: ErrorState;

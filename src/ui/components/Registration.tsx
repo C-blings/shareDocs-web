@@ -1,12 +1,16 @@
 import RegistrationField from "../molecules/RegistrationField";
 import {autoInjectable, container, inject, injectable, singleton} from "tsyringe";
 import React, {useState} from "react";
-import {ViewModel} from "@yoskutik/react-vvm";
+import {view, ViewModel} from "@yoskutik/react-vvm";
 import {createStyles, makeStyles, Theme, useTheme} from "@material-ui/core";
 import {Colors} from "../../theme/colors";
-const Registration = () => {
+import RegistrationViewModel from "../viewmodels/RegistrationViewModel";
+import TestViewModel from "../viewmodels/TestViewModel";
+
+const Registration = view(RegistrationViewModel)(({viewModel})  => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [login, setLogin] = useState("");
 
     const handlePasswordChange = (value: string) => {
         viewModel.checkPassword(value);
@@ -19,9 +23,6 @@ const Registration = () => {
 
     };
 
-<<<<<<< HEAD
-    return (
-=======
     const handleLoginChange = (value: string) => {
         viewModel.checkLogin(value);
         setLogin(value);
@@ -33,17 +34,13 @@ const Registration = () => {
 
 
     return <>
->>>>>>> 9588e80 (feat registration panel: add errors and user check)
         <RegistrationField
             email={email}
             handleEmailChange={handleEmailChange}
             password={password}
             handlePasswordChange={handlePasswordChange}
-<<<<<<< HEAD
-        />
-    )
-}
-=======
+            login={login}
+            handleLoginChange={handleLoginChange}
             onClick={addUser}
             loginErrorState={viewModel.loginErrorState}
             emailErrorState={viewModel.emailErrorState}
@@ -53,6 +50,5 @@ const Registration = () => {
     </>
 
 });
->>>>>>> 9588e80 (feat registration panel: add errors and user check)
 
 export default Registration
