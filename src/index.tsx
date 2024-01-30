@@ -12,6 +12,8 @@ import Profile from "./ui/components/Profile";
 import {CssBaseline, ThemeProvider} from "@material-ui/core";
 import theme from "./theme/theme";
 import Test from "./ui/components/Test";
+import Main from "./ui/components/Main";
+import GroupMain from "./ui/components/Group/GroupMain";
 
 configure({
     vmFactory: VM => container.resolve(VM),
@@ -22,23 +24,27 @@ const root = ReactDOM.createRoot(
 );
 
 const router = createBrowserRouter([
-        {
-            path: "/",
-            element: <App/>
-        },
-        {
-            path: "/test",
-            element: <Test/>
-        },
-        {
-            path: "/profile/:id",
-            element: <Profile/>
-        },
-        {
-            path: "/registration",
-            element: <Registration/>
-        }
-    ])
+    {
+        path: "/",
+        element: <Main/>
+    },
+    {
+        path: "/test",
+        element: <Test/>
+    },
+    {
+        path: "/group/:id",
+        element: <GroupMain/>
+    },
+    {
+        path: "/profile/:id",
+        element: <Profile/>
+    },
+    {
+        path: "/registration",
+        element: <Registration/>
+    }
+])
 
 
 root.render(
