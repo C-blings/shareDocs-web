@@ -3,7 +3,6 @@ import MainViewModel from "../viewmodels/MainViewModel";
 import React, {useEffect} from "react";
 import {createStyles, Grid, makeStyles, Theme} from "@material-ui/core";
 import WorkspaceInList from "../molecules/WorkspaceInList";
-import theme from "../../theme/theme";
 
 const useStyle = makeStyles((theme: Theme) => createStyles({
     main: {

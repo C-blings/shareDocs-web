@@ -30,6 +30,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="TypeScript File" />
+        <option value="Dockerfile" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -64,7 +65,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "git-widget-placeholder": "8a905bb3",
+=======
+    "git-widget-placeholder": "dev",
+>>>>>>> 85dd57f (basic main screen)
     "last_opened_file_path": "/Users/paulnikulshin/WebstormProjects/sharedocs/src/ui/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
