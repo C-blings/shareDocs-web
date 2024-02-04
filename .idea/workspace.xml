@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
+      <change afterPath="$PROJECT_DIR$/src/data/remote/MainAPI.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repository/MainRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/molecules/WorkspaceInList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/data/dto/GroupInListDTO.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/WorkspaceInListDTO.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" afterDir="false" />
-=======
+      <change beforePath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BasicRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" afterDir="false" />
->>>>>>> f2cd69b (feat registration: remove hardcode)
-      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/RegistrationViewModel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repository/TestStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/TestRepository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Group/GroupMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Workspace/GroupMain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/MainViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/MainViewModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +28,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="TypeScript File" />
+        <option value="Dockerfile" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="7c53b70547f1af8439faee4b0d0cf5c1944725e9" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -38,10 +52,6 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 2
-}</component>
   <component name="ProjectId" id="2WmMO4zNoHMb6c28Qh30bmwiL7D" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,52 +60,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "registration__panel",
-    "last_opened_file_path": "/Users/paulnikulshin/WebstormProjects/sharedocs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/sliderer/projects/Cblings/shareDocs-web/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
-=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;registration__panel&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sliderer/projects/bang-board-game-frontend&quot;,
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    &quot;git-widget-placeholder&quot;: &quot;8a905bb3&quot;,
+=======
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 85dd57f (basic main screen)
+    &quot;last_opened_file_path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/src/ui/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/sliderer/Cblings/shareDocs-web/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
->>>>>>> f2cd69b (feat registration: remove hardcode)
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/components" />
       <recent name="$PROJECT_DIR$/src/data/remote" />
       <recent name="$PROJECT_DIR$/shared-docs/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/components/Group" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/ui/atoms/Basic" />
       <recent name="$PROJECT_DIR$/shared-docs/src" />
-      <recent name="$PROJECT_DIR$/shared-docs/node_modules" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -145,9 +142,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.eject" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.eject" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -178,17 +176,7 @@
       <workItem from="1704997196822" duration="217000" />
       <workItem from="1705158404588" duration="139000" />
       <workItem from="1705160308606" duration="918000" />
-      <workItem from="1705323123440" duration="4731000" />
-      <workItem from="1705656280728" duration="652000" />
-      <workItem from="1705670627341" duration="1190000" />
-      <workItem from="1705674846884" duration="601000" />
-      <workItem from="1705908079423" duration="1983000" />
-      <workItem from="1705910466849" duration="1327000" />
-      <workItem from="1705919819001" duration="353000" />
-      <workItem from="1705920828912" duration="937000" />
-      <workItem from="1705931383330" duration="127000" />
-      <workItem from="1706024654709" duration="38000" />
-      <workItem from="1706542293973" duration="211000" />
+      <workItem from="1707069358881" duration="7911000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />
@@ -203,6 +191,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="±" />

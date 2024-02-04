@@ -1,5 +1,5 @@
 import {BasicAPI} from "./BasicAPI";
-import {injectable, singleton} from "tsyringe";
+import {singleton} from "tsyringe";
 import User, {CheckIfUserExist} from "../dto/RegistrationDTO";
 
 @singleton()
