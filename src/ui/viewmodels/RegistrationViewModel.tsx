@@ -25,13 +25,18 @@ class RegistrationViewModel extends ViewModel {
             this.requestError = 'fill all fields correctly'
             return;
         }
-        alert(this.app.checkIfUserExists(user))
-        if (!this.app.checkIfUserExists(user)){
-           this.app.sendUser(user);
-        } else {
+        this.app.checkIfUserExists(user).then(
+            result => {
+                console.log("RESULT: " + result)
+                if (!result){
 
-            this.requestError = 'user with this login already exists'
-        }
+                    this.app.sendUser(user);
+                } else {
+                    console.log('false');
+                    this.requestError = 'user with this login already exists';
+                }
+            }
+        )
     }
 
     checkLogin = (login: string) => {

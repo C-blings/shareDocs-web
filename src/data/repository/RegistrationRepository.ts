@@ -11,9 +11,9 @@ export class RegistrationRepository {
         makeObservable(this);
     }
 
-    checkIfUserExists = (user: User) => {
-        let result = false;
-        this.api.checkIfUserExists(user).then(data => {
+    checkIfUserExists = async (user: User) => {
+        let result = true;
+        await this.api.checkIfUserExists(user).then(data => {
             result = data.data.result;
         });
         return result;
