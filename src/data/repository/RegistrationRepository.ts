@@ -19,7 +19,7 @@ export class RegistrationRepository {
 
     sendUser = async (user: User) => {
         try {
-            const data = await this.api.sendUser(user);
+            this.api.sendUser(user);
         } catch (error) {
             console.log('no way');
         }
