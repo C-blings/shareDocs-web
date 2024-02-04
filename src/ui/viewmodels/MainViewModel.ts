@@ -1,17 +1,26 @@
 import {BasicViewModel} from "./BasicViewModel";
 import {injectable} from "tsyringe";
-import {computed, makeObservable} from "mobx";
-import GroupInListDTO from "../../data/dto/GroupInListDTO";
+import {computed, makeObservable, observable} from "mobx";
+import WorkspaceInListDTO from "../../data/dto/WorkspaceInListDTO";
+import {MainRepository} from "../../data/repository/MainRepository";
 
 @injectable()
 class MainViewModel extends BasicViewModel {
-    @computed get groupsList(): GroupInListDTO[] {
-        return [{id: "10"}, {id: "20"}, {id: "30"}]
-    }
+    @observable workspaces: WorkspaceInListDTO[] = []
 
-    constructor() {
+    constructor(private repository: MainRepository) {
         super();
         makeObservable(this)
+    }
+
+    getWorkspaces = () => {
+        this.workspaces = [{id: "10"}, {id: "20"}, {id: "30"}, {id: "30"}, {id: "30"}, {id: "30"}, {id: "30"}, {id: "30"}, {id: "30"}]
+        // this.repository.getWorkspaces().then(
+        //     result => {
+        //         console.log(result)
+        //         this.workspaces = result
+        //     }
+        // )
     }
 }
 

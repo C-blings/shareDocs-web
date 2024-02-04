@@ -13,7 +13,7 @@ import {CssBaseline, ThemeProvider} from "@material-ui/core";
 import theme from "./theme/theme";
 import Test from "./ui/components/Test";
 import Main from "./ui/components/Main";
-import GroupMain from "./ui/components/Group/GroupMain";
+import GroupMain from "./ui/components/Workspace/GroupMain";
 
 configure({
     vmFactory: VM => container.resolve(VM),
