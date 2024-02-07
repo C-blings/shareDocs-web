@@ -13,7 +13,7 @@ import {CssBaseline, ThemeProvider} from "@material-ui/core";
 import theme from "./theme/theme";
 import Test from "./ui/components/Test";
 import Main from "./ui/components/Main";
-import GroupMain from "./ui/components/Workspace/GroupMain";
+import Workspace from "./ui/components/Workspace/Workspace";
 
 configure({
     vmFactory: VM => container.resolve(VM),
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
         element: <Test/>
     },
     {
-        path: "/group/:id",
-        element: <GroupMain/>
+        path: "/workspace/:id",
+        element: <Workspace/>
     },
     {
         path: "/profile/:id",

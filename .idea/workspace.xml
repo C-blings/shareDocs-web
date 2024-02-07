@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="±">
-      <change afterPath="$PROJECT_DIR$/src/data/remote/MainAPI.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repository/MainRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/molecules/WorkspaceInList.tsx" afterDir="false" />
+    <list default="true" id="009acb9c-b99f-44b9-ba66-6a4f7db0226e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dto/GroupInListDTO.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dto/WorkspaceInListDTO.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/remote/RegistrationAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/BasicStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/BasicRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/RegistrationRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repository/TestStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repository/TestRepository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Group/GroupMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Workspace/GroupMain.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/MainViewModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/MainViewModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/viewmodels/TestViewModel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Workspace/GroupMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Workspace/Workspace.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/molecules/WorkspaceInList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/molecules/WorkspaceInList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="7c53b70547f1af8439faee4b0d0cf5c1944725e9" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,27 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-    &quot;git-widget-placeholder&quot;: &quot;8a905bb3&quot;,
-=======
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 85dd57f (basic main screen)
-    &quot;last_opened_file_path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/src/ui/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/paulnikulshin/WebstormProjects/sharedocs/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Rebasing dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/paulnikulshin/WebstormProjects/sharedocs/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ui/components" />
@@ -152,7 +134,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bc876c3e-111a-4bbf-892d-eadf50da422e" name="Changes" comment="" />
+      <changelist id="009acb9c-b99f-44b9-ba66-6a4f7db0226e" name="Changes" comment="" />
       <created>1697333266479</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -177,6 +159,7 @@
       <workItem from="1705158404588" duration="139000" />
       <workItem from="1705160308606" duration="918000" />
       <workItem from="1707069358881" duration="7911000" />
+      <workItem from="1707329576809" duration="1122000" />
     </task>
     <task id="LOCAL-00001" summary="±">
       <option name="closed" value="true" />

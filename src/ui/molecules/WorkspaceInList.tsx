@@ -1,6 +1,7 @@
 import WorkspaceInListDTO from "../../data/dto/WorkspaceInListDTO";
 import {createStyles, makeStyles, Theme} from "@material-ui/core";
 import React from "react";
+import {Link} from "react-router-dom";
 
 const useStyle = makeStyles((theme: Theme) => createStyles({
     main: {
@@ -41,18 +42,25 @@ const useStyle = makeStyles((theme: Theme) => createStyles({
 
 const WorkspaceInList = (
     {
-        workspace
+        workspace,
+        onClick
     }:
         {
-            workspace: WorkspaceInListDTO
+            workspace: WorkspaceInListDTO,
+            onClick: (id: string) => void
         }
 ) => {
+
+    const onClickFunction = () => {
+        onClick(workspace.id)
+    }
+
     const classes = useStyle()
     return (
-        <div className={classes.main}>
+        <div className={classes.main} onClick={onClickFunction}>
             <img className={classes.photo}
-                src="https://sun1-16.userapi.com/impg/gOqiE-JS9IFHkVeC9eepP3nA3ZLKs-f0ICSAHw/QrNn3kUz-go.jpg?size=1920x1280&quality=96&sign=e0c16272afa6b1b37a7236195789adde&type=album"
-                alt={"workspace photo"}
+                 src="https://sun1-16.userapi.com/impg/gOqiE-JS9IFHkVeC9eepP3nA3ZLKs-f0ICSAHw/QrNn3kUz-go.jpg?size=1920x1280&quality=96&sign=e0c16272afa6b1b37a7236195789adde&type=album"
+                 alt={"workspace photo"}
             />
             <h6 className={classes.title}>БПИ221</h6>
             <h6 className={classes.info}>Last edited 5 minutes ago</h6>
