@@ -1,7 +1,10 @@
 
 
 type WorkspaceInListDTO = {
-    id: string
+    id: string,
+    title: string,
+    image: string,
+    info: string
 }
 
 export default WorkspaceInListDTO

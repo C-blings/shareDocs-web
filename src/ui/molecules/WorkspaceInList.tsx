@@ -59,11 +59,11 @@ const WorkspaceInList = (
     return (
         <div className={classes.main} onClick={onClickFunction}>
             <img className={classes.photo}
-                 src="https://sun1-16.userapi.com/impg/gOqiE-JS9IFHkVeC9eepP3nA3ZLKs-f0ICSAHw/QrNn3kUz-go.jpg?size=1920x1280&quality=96&sign=e0c16272afa6b1b37a7236195789adde&type=album"
+                 src={workspace.image}
                  alt={"workspace photo"}
             />
-            <h6 className={classes.title}>БПИ221</h6>
-            <h6 className={classes.info}>Last edited 5 minutes ago</h6>
+            <h6 className={classes.title}>{workspace.title}</h6>
+            <h6 className={classes.info}>{workspace.info}</h6>
         </div>
     )
 }
